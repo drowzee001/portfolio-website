@@ -1,0 +1,34 @@
+@import "_normalize.scss";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700&display=swap");
+
+$colors: (
+  primary: #009688,
+  primary-dark: #00796b,
+  primary-light: #b2dfdb,
+  accent: #03a9f4,
+);
+$font-main: "Open Sans", "sans-serif";
+$padding: 50px;
+$small: 575px;
+$medium: 767px;
+
+@mixin small {
+  @media (max-width: #{$small}) {
+    @content;
+  }
+}
+@mixin medium {
+  @media (max-width: #{$medium}) {
+    @content;
+  }
+}
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+body {
+  font-family: $font-main;
+  font-size: 18px;
+  margin: 0;
+}

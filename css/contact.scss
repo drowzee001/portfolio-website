@@ -1,0 +1,94 @@
+@import "_nav.scss";
+main {
+  margin: 0;
+  margin-top: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  max-width: 1000px;
+  h1 {
+    text-align: center;
+  }
+  @include medium {
+    flex-direction: column;
+  }
+}
+.contact {
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  @include medium {
+    flex-direction: column;
+  }
+}
+.contactForm {
+  flex: 1 1 0px;
+  display: flex;
+  flex-direction: column;
+}
+.response {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0 50px 50px 50px;
+  height: 531px;
+  p {
+    text-align: center;
+  }
+  @include medium {
+    padding: 0 50px;
+    margin: 100px 0 75px 0;
+    height: auto;
+  }
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  label {
+    margin-bottom: 15px;
+  }
+  input {
+    margin-bottom: 25px;
+    height: 40px;
+  }
+  input[type="submit"] {
+    margin-top: 50px;
+    background-color: color(accent);
+    border: none;
+    color: white;
+    height: 50px;
+  }
+  input[type="submit"]:hover {
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+  }
+  input[type="submit"]:focus {
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5) inset;
+  }
+  #message {
+    min-height: 150px;
+    resize: none;
+  }
+}
+.contactInfo {
+  display: flex;
+  flex: 1 1 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // margin: 50px;
+  text-align: center;
+  p {
+    word-break: break-all;
+  }
+  svg {
+    height: 25px;
+    width: 25px;
+    margin: 15px;
+  }
+  @include medium {
+    padding: 50px 0;
+  }
+}

@@ -1,0 +1,23 @@
+@import "_config.scss";
+.navbar {
+  background-color: color(primary-dark);
+}
+nav {
+  ul {
+    margin-bottom: 0 !important;
+  }
+  li {
+    font-size: 16px;
+    padding: 0 15px;
+    @include medium {
+      text-align: center;
+    }
+  }
+  img {
+    height: 40px;
+    @include medium {
+      content: url("../assets/GitHub-Mark-Light.png");
+      margin: 1.5em;
+    }
+  }
+}
