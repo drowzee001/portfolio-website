@@ -17,10 +17,10 @@
       $msg = htmlspecialchars(trim($_POST['message']));
       //Create message
       $msg = wordwrap($msg,70);
-      console_log($name);
-      console_log($email);
-      console_log($msg);
-      // mail("drowzee001@hotmail.com","Web Development Inquiry", $msg);
+      // console_log($name);
+      // console_log($email);
+      // console_log($msg);
+      mail("drowzee001@hotmail.com","Web Development Inquiry", $msg);
   }
 ?>
 <!DOCTYPE html>
