@@ -517,5 +517,20 @@ main img {
 
 .buttons {
   display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.buttons a {
+  margin: 5px;
 }
 /*# sourceMappingURL=projects.css.map */

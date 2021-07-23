@@ -91,4 +91,14 @@ main {
 }
 .buttons {
   display: block;
+  justify-content: center;
+  @include medium {
+    display: flex;
+  }
+  a {
+    margin: 5px;
+    @include medium {
+
+    }
+  }
 }
