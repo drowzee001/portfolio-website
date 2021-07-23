@@ -503,6 +503,10 @@ main img {
   }
 }
 
+.flip-card-back p {
+  margin-bottom: 0;
+}
+
 @media (max-width: 767px) {
   .flip-card-back p {
     font-size: small;
@@ -532,5 +536,10 @@ main img {
 
 .buttons a {
   margin: 5px;
+}
+
+.alert {
+  margin: 0;
+  padding: 0;
 }
 /*# sourceMappingURL=projects.css.map */

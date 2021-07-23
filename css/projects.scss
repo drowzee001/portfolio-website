@@ -80,6 +80,7 @@ main {
   }
 }
 .flip-card-back p {
+  margin-bottom: 0;
   @include medium {
     font-size: small;
   }
@@ -97,8 +98,9 @@ main {
   }
   a {
     margin: 5px;
-    @include medium {
-
-    }
   }
+}
+.alert {
+  margin: 0;
+  padding: 0;
 }
